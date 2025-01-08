@@ -116,18 +116,25 @@
   }
   
   .cta-btn {
-    margin-top: 20px;
-    padding: 14px 28px;  /* Increase button padding for better touch targets */
-    font-size: 1.1rem;
-    background-color: #007bff;
-    color: white;
+    padding: 14px 28px;
+    font-size: 1.25rem;
+    background-color: white; /* Make button background white */
+    color: #007bff; /* Blue text color for contrast */
+    border: 2px solid #007bff; /* Blue border for visibility */
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
   }
   
   .cta-btn:hover {
-    background-color: #0056b3;
+    background-color: #007bff; /* Change background to blue on hover */
+    color: white; /* Change text color to white */
+    border-color: #0056b3; /* Darken border color */
+  }
+  
+  .cta-btn:focus {
+    outline: none; /* Remove the outline on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Optional: Add a glow effect on focus */
   }
   
 /* Process Steps Section (How it works) */
